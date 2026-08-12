@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BOB – Client Ready Calling Report Dashboard</title><link rel="stylesheet" href="/styles.css"></head><body><div class="app">
+<header><div class="brand"><b>☎</b><div><h1>BOB – Client Ready Calling Report Dashboard</h1><p>Disposition Overview</p></div></div><div>Last Updated: <span id="updated">—</span> <button id="refresh">↻</button></div></header>
+<section class="card filters"><label>From<input id="from" type="date"></label><label>To<input id="to" type="date"></label><label>Disposition<select id="disp"><option value="">All</option></select></label><label>Sub-Disposition<select id="sub"><option value="">All</option></select></label><button id="reset">Reset</button></section>
+<section id="kpis" class="kpis"></section>
+<section class="g3"><div class="card panel"><h3>Disposition Distribution</h3><div id="bars"></div></div><div class="card panel"><h3>Sub-Disposition Breakdown</h3><div id="subs"></div></div><div class="card panel"><h3>Trend by Date</h3><div id="trend"></div></div></section>
+<section class="g2"><div class="card panel"><h3>Callback / Action Queue <button id="cb">View All</button></h3><div class="table"><table id="cbt"></table></div></div><div class="card panel"><h3>Disposition Summary</h3><div class="table"><table id="sum"></table></div></div></section>
+<section class="card panel"><h3>Detailed Records <button id="export">Export CSV</button></h3><div class="table"><table id="records"></table></div></section>
+<footer>Live source: Google Sheet · <span id="count">0</span> records</footer></div><script src="/app.js"></script></body></html>
